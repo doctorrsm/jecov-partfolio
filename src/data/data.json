@@ -1,0 +1,54 @@
+{
+  "pages": [
+    {
+      "id": 1,
+      "pageName": "Главная",
+      "title": "Олег Жеков",
+      "specialisation": ["Аналитика данных", "Бизнес-аналитика", "Экономика"],
+      "button": "Резюме"
+    },
+    {
+      "id": 2,
+      "pageName": "Резюме",
+      "sections": {
+        "aboutMe": {
+          "sectionTitle": "Обо мне",
+          "introText": "Hello there! My name is Alan Walker. I am a graphic designer, and I'm very passionate and dedicated to my work.",
+          "brief": {
+            "name": "Олег",
+            "address": "Молдова, г. Тирасполь",
+            "study": "Комртаский Государственный Университет",
+            "degree": "Магистр",
+            "mail": "brabuslight01@gmail.com",
+            "Phone": "+373 (698) 691-00"
+          }
+        },
+        "skills": [
+          "Высокий уровень навыков работы с MS Excel",
+          "Анализ сложных моделей реализованных в MS Excel",
+          "Построение демо-моделей Miro",
+          "Умение программировать SQL, Python"
+        ],
+        "languages": {
+          "Русский": "95",
+          "Турецкий": "40",
+          "Английский": "25"
+        },
+        "education": [
+          {
+            "duringTime": "2018-2020",
+            "institution": "Комратский Государственный Университет \n(Экономика, степень магистра, корпоративные финансы)"
+          },
+          {
+            "duringTime": "2014-2018",
+            "institution": "Университет \"Синергия\"\n(Экономика, степень бакалавра, финансы и кредиты)"
+          }
+
+        ]
+      },
+     "textLists": {
+        "services": ["one", "tow", "three", "four"]
+      }
+    }
+  ]
+}
