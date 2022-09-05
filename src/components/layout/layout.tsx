@@ -4,12 +4,13 @@ import './layout.css';
 import {useAppDispatch, useAppSelector} from '../../store/hooks';
 import { bounce } from 'react-animations';
 import { StyleSheet, css } from 'aphrodite';
+import {PageNames} from '../../const';
 
 export default function Layout() {
 
     const currentPage = useAppSelector(state => state.data.currentPage);
 
-    const isMain = currentPage === 'main';
+    const isMain = currentPage === PageNames.Home;
 
     const styles = StyleSheet.create({
         bounce: {

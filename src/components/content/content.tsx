@@ -4,10 +4,9 @@ import About from '../pages/about';
 import Contact from '../pages/contact';
 import Skills from '../pages/skills';
 
-import { bounceInRight } from 'react-animations';
-import { StyleSheet, css } from 'aphrodite';
-
-
+import {bounceInRight} from 'react-animations';
+import {css, StyleSheet} from 'aphrodite';
+import {PageNames} from '../../const';
 
 
 export default function Layout() {
@@ -27,30 +26,26 @@ export default function Layout() {
         }
     })
 
-    if (currentPage === 'about') {
+    if (currentPage === PageNames.About) {
         return (
-
-
-                <About />
-
-
+            <About/>
         )
     }
 
-    if (currentPage === 'skills') {
+    if (currentPage === PageNames.Skills) {
         return (
-            <Skills />
+            <Skills/>
         )
     }
 
-    if (currentPage === 'contact') {
+    if (currentPage === PageNames.Contact) {
         return (
-            <Contact />
+            <Contact/>
         )
     }
     return (
         <article className={css(styles.bounce)}>
-            <Home />
+            <Home/>
         </article>
     )
 }
