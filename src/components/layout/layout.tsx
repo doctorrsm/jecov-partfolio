@@ -1,9 +1,9 @@
 import Navbar from "../navbar/navbar";
 import Content from '../content/content';
 import './layout.css';
-import {useAppDispatch, useAppSelector} from '../../store/hooks';
-import { bounce } from 'react-animations';
-import { StyleSheet, css } from 'aphrodite';
+import {useAppSelector} from '../../store/hooks';
+import {bounce} from 'react-animations';
+import {StyleSheet} from 'aphrodite';
 import {PageNames} from '../../const';
 
 export default function Layout() {
@@ -19,19 +19,19 @@ export default function Layout() {
         }
     })
 
-  return (
-    <>
-      <Navbar />
-      <main className='page-main'>
-          <div className='image-wrapper'>
-              {!isMain && <h1>Олег Жеков</h1>}
-        <img src="https://picsum.photos/400/600" alt="" />
+    return (
+        <>
+            <Navbar/>
+            <main className='page-main'>
+                <div className='image-wrapper'>
 
-          </div>
+                    <img className='avatar' src="/img/avatar.jpg" alt="Олег Жеков"/>
 
-              <Content />
+                </div>
 
-      </main>
-    </>
-  );
+                <Content/>
+
+            </main>
+        </>
+    );
 }
